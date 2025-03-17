@@ -13,6 +13,7 @@ function stringChop(str, size) {
 		}
 		
 	}
+	return ans
 
 	
 }
