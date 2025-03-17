@@ -8,10 +8,13 @@ function stringChop(str, size) {
 			ans.push(string[i])
 		}
 		else if(string[i].length<size){
-
+ans.push(string[i])
 			
 		}
-		
+		else if(string[i].length>size){
+			let res=string[i].split(string[i].length/size);
+			ans.push(res)
+		}
 	}
 	return ans
 
