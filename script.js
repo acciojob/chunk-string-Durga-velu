@@ -5,12 +5,13 @@ function stringChop(str, size) {
 	}
 	
 	let ans=[]
-	for(let i of str){
+	for(let i = 0; i < str.length; i += size){
 		
 	let chunk=str.substr(i,size)
 			ans.push(chunk)
 	
 	}
+
 
 	
 	return ans
