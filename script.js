@@ -1,9 +1,8 @@
 function stringChop(str, size) {
   // your code here
 	if (str=="") {
-		return []
+		return "[]"
 	}
-	
 	let ans=[]
 	for(let i = 0; i < str.length; i += size){
 		
@@ -11,12 +10,7 @@ function stringChop(str, size) {
 			ans.push(chunk)
 	
 	}
-
-
-	
 	return ans
-
-	
 }
 
 // Do not change the code below
