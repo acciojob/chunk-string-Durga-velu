@@ -16,7 +16,7 @@ ans.push(i)
 		}
 			
 		else if(i.length>size){
-			let res=i.split(i.length/size);
+			let res=i.split(i.length/2);
 			ans.push(res)
 		}
 	}
