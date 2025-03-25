@@ -3,17 +3,16 @@ function stringChop(str, size) {
 	let string=str.split(" ")
 	let ans=[]
 	for(let i of string){
-
-		if(string[i].length==size){
-			ans.push(string[i])
+		if(i.length==size){
+			ans.push(i)
 		}
-		else if(string[i].length<size){
-ans.push(string[i])
+		else if(i.length<size){
+ans.push(i)
 			
 		}
 			
-		else if(string[i].length>size){
-			let res=string[i].split(string[i].length/size);
+		else if(i.length>size){
+			let res=i.split(i.length/size);
 			ans.push(res)
 		}
 	}
