@@ -1,11 +1,10 @@
 function stringChop(str, size) {
   // your code here
-	if (str=="") {
-		return "[]"
-	}
+if (str == null || str == "") {
+    return []
+  }
 	let ans=[]
 	for(let i = 0; i < str.length; i += size){
-		
 	let chunk=str.substr(i,size)
 			ans.push(chunk)
 	
