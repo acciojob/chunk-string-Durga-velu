@@ -3,7 +3,8 @@ function stringChop(str, size) {
 	if (str=="") {
 		return null
 	}
-	let string=str.split(" ")
+	let string=str.toString().split(" ")
+	
 	let ans=[]
 	for(let i of string){
 		if(i.length===size)
@@ -20,6 +21,8 @@ ans.push(i)
 			ans.push(res)
 		}
 	}
+
+	
 	return ans
 
 	
