@@ -1,9 +1,13 @@
 function stringChop(str, size) {
   // your code here
+	if (str=="") {
+		return null
+	}
 	let string=str.split(" ")
 	let ans=[]
 	for(let i of string){
-		if(i.length==size){
+		if(i.length===size)
+		{
 			ans.push(i)
 		}
 		else if(i.length<size){
