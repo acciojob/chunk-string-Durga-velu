@@ -3,23 +3,13 @@ function stringChop(str, size) {
 	if (str=="") {
 		return null
 	}
-	let string=str.toString().split(" ")
 	
 	let ans=[]
-	for(let i of string){
-		if(i.length===size)
-		{
-			ans.push(i)
-		}
-		else if(i.length<size){
-ans.push(i)
-			
-		}
-			
-		else if(i.length>size){
-			let res=i.split(i.length/2);
-			ans.push(res)
-		}
+	for(let i of str){
+		
+	let chunk=str.substr(i,size)
+			ans.push(chunk)
+	
 	}
 
 	
