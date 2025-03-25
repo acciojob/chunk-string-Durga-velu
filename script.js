@@ -1,7 +1,7 @@
 function stringChop(str, size) {
   // your code here
 	if (str=="") {
-		return null
+		return []
 	}
 	
 	let ans=[]
